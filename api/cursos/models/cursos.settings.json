@@ -1,9 +1,8 @@
 {
-  "kind": "collectionType",
-  "collectionName": "blogs",
+  "kind": "singleType",
+  "collectionName": "cursos",
   "info": {
-    "name": "Blog",
-    "description": ""
+    "name": "Cursos"
   },
   "options": {
     "increments": true,
@@ -16,7 +15,7 @@
       "type": "string",
       "required": true
     },
-    "resumen": {
+    "contenido": {
       "type": "richtext",
       "required": true
     },
@@ -29,15 +28,6 @@
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
-    },
-    "contenido": {
-      "type": "richtext",
-      "required": true
-    },
-    "url": {
-      "type": "uid",
-      "required": true,
-      "targetField": "titulo"
     }
   }
 }
